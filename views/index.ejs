@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoonCart</title>
+    <link rel="shortcut icon" href="/images/Mc.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/stylesheet/style.css">
+  </head>
+  <body class="bg-zinc-100">
+    <!-- Navbar -->
+    <div class="nav flex justify-between items-center p-5 m-2">
+      <div class="logo">
+        <h1 class="text-purple-700 uppercase font-bold tracking-tight text-2xl heading">
+          Moon
+          <span class="bg-purple-700 text-white px-3 py-2 tracking-wide rounded"> Cart </span>
+        </h1>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="container flex flex-col md:flex-row justify-between items-center p-5 w-screen h-auto">
+      
+      <!-- Signup form -->
+      <div class="signup flex justify-center items-center min-h-auto p-5 w-full md:w-[45%]">
+        <div class="w-full sm:w-[600px] p-8 rounded-lg border-4 border-double border-purple-400 shadow-lg shadow-purple-500/50">
+          <h1 class="text-center text-4xl font-bold tracking-wide mb-6">SignUp</h1>
+          <form action="/user/createUser" autocomplete="off" method="post" class="space-y-4">
+            <input type="text" name="name" placeholder="Enter Name" class="w-full px-5 py-3 bg-transparent border-2 border-purple-300 rounded-lg outline-none placeholder-grey-100">
+            <input type="number" name="contact" placeholder="+1234567890" class="w-full px-5 py-3 bg-transparent border-2 border-purple-300 rounded-lg outline-none placeholder-grey-100">
+            <input type="email" name="email" placeholder="Enter Email" class="w-full px-5 py-3 bg-transparent border-2 border-purple-300  rounded-lg outline-none placeholder-grey-100">
+            <input type="password" name="password" placeholder="*****" class="w-full px-5 py-3 bg-transparent border-2 border-purple-300 rounded-lg outline-none placeholder-grey-100">
+            <button type="submit" class="bg-purple-400 text-xl uppercase tracking-wide rounded-lg p-2 w-full hover:bg-purple-500">Signup</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Separator -->
+      <div class="text-black text-center w-full md:w-[10%] my-6 md:my-0">
+        <h1 class="text-4xl">OR</h1>
+        <span class="line block my-2"></span>
+      </div>
+
+      <!-- Login form -->
+      <div class="login flex justify-center items-center min-h-auto p-5 w-full md:w-[45%]">
+        <div class="w-full sm:w-[600px] p-8 rounded-lg border-4 border-double border-purple-400 shadow-lg shadow-purple-500/50">
+          <h1 class="text-center text-4xl font-bold tracking-wide mb-6">Login</h1>
+          <form action="/user/loginUser" autocomplete="off" method="post" class="space-y-4">
+            <input type="email" name="email" placeholder="Enter Email" class="w-full px-5 py-3 bg-transparent border-2 border-purple-300  rounded-lg outline-none placeholder-grey-100">
+            <input type="password" name="password" placeholder="*****" class="w-full px-5 py-3 bg-transparent border-2 border-purple-300 rounded-lg outline-none placeholder-grey-100">
+            <button type="submit" class="bg-purple-400 text-white text-xl uppercase tracking-wide rounded-lg p-2 w-full hover:bg-purple-500">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

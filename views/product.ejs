@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoonCart</title>
+    <link rel="shortcut icon" href="/images/Mc.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/stylesheet/style.css">
+  </head>
+  <body class="bg-zinc-100">
+    <div class="bg-zinc-100 ">
+      <!-- Navbar -->
+      <div class="nav flex justify-between items-center p-5 m-2">
+        <div class="logo">
+          <h1 class="text-purple-700 uppercase font-bold tracking-tight text-2xl heading">
+            Moon
+            <span class="bg-purple-700 text-white px-3 py-2 tracking-wide rounded"> Cart </span>
+          </h1>
+        </div>
+        <div class="flex justify-center gap-2 items-center">
+          <a href="/dashboard" class=" rounded-lg hover:text-purple-500 px-2 py-1">Dashboard</a>
+          <a href="/logout" class="bg-red-700 text-white rounded-lg px-2 py-1">Logout</a>
+        </div>
+      </div>
+
+      <!-- Main content (Create Product form) -->
+      <div class="container flex justify-center items-center p-5 w-full h-min-screen absolute">
+        <!-- Create Product -->
+        <div class="signup justify-center items-center min-h-screen">
+          <div class="w-full sm:w-[600px] p-8 rounded-lg border-4 border-double border-purple-400 shadow-lg shadow-purple-500/50">
+            <h1 class="text-center text-4xl font-bold tracking-wide mb-6">Create Product</h1>
+            <form action="/product/createProduct" autocomplete="off" method="post" enctype="multipart/form-data" class="space-y-4">
+              <div class="flex flex-col items-center">
+                <input type="file" name="picture" class="block w-full text-sm text-white file:bg-purple-700 file:border-0 file:px-4 file:py-2 file:rounded-lg file:text-white hover:file:bg-purple-600">
+              </div>
+              <div class="block">
+                <h1 class="text-2xl">Product Detail</h1>
+                <div class="flex flex-wrap gap-2 m-2">
+                  <input type="text" name="name" placeholder="Enter Product Name" class="w-full sm:w-[45%] px-5 py-3 bg-transparent border-2 border-purple-300 rounded-lg outline-none placeholder-grey-100">
+                  <input type="number" name="price" placeholder="Price" class="w-full sm:w-[45%] px-5 py-3 bg-transparent border-2 border-purple-300 rounded-lg outline-none placeholder-grey-100">
+                </div>
+                <div class="block m-2">
+                  <input type="number" name="discount" placeholder="Discount" class="w-full px-5 py-3 bg-transparent border-2 border-purple-300 rounded-lg outline-none placeholder-grey-100">
+                </div>
+              </div>
+              <div class="block">
+                <h1 class="text-2xl tracking-wide">Panel Detail</h1>
+                <div class="flex flex-wrap gap-2 m-2">
+                  <input type="text" name="bgColor" placeholder="bgColor" class="w-full sm:w-[45%] px-5 py-3 bg-transparent border-2 border-purple-300 rounded-lg outline-none placeholder-grey-100">
+                  <input type="text" name="panelColor" placeholder="panelColor" class="w-full sm:w-[45%] px-5 py-3 bg-transparent border-2 border-purple-300 rounded-lg outline-none placeholder-grey-100">
+                </div>
+                <div class="block m-2">
+                  <input type="text" name="textColor" placeholder="textColor" class="w-full px-5 py-3 bg-transparent border-2 border-purple-300 rounded-lg outline-none placeholder-grey-100">
+                </div>
+              </div>
+              <button type="submit" class="bg-purple-400 text-white text-xl uppercase tracking-wide rounded-lg p-2 w-full hover:bg-purple-500">Create Product</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
