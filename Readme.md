@@ -1,14 +1,14 @@
 <h1>Ecommerce NodeJs web page<h1>
 
-<p>Run these command before start program
+Run these command before start program
 
-export DEBUG=development:*   
+<strong> export DEBUG=development:*   </strong>
 
 and also install npm packages
 run command 
 
-npm i
-</p>
+<strong> npm i </strong>
+
 
 <!-- mongoose -->
 
