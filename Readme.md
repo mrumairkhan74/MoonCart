@@ -8,12 +8,12 @@
 <ul>
 
 <li>
-    <h3>open config folder</h3>
-    <h4>Go to Development.json</h4>
+    <p>open config folder<p>
+    <p>Go to Development.json<p>
     <p>add your mongoDB link an replace it</p>
 </li>
 <li>
-<h3>Create a .env file where you can add your JWT_Secret KEY</h3>
+<p>Create a .env file where you can add your JWT_Secret KEY<p>
 </li>
 
 </ul>
