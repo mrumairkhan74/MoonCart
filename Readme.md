@@ -1,5 +1,11 @@
 <h1>Ecommerce NodeJs web page<h1>
 
+create .env file and add your values
+JWT_KEY = *******  <!-- star mean your secret value -->
+EXPRESS_SESSION_SECRET = ********
+
+
+
 Run these command before start program
 
 <strong> export DEBUG=development:*   </strong>
