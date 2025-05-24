@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const dbgr = require("debug")("development:mongoose")
-const config = require('config');
+require('dotenv').config()
 
-const connection = mongoose.connect(`${config.get("MONGO_URI")}/Moon-Cart`);
+const connection = mongoose.connect(process.env.MONGO_URI);
 
 connection.then(()=>{
     dbgr('Database connected')
