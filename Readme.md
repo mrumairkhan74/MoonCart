@@ -25,6 +25,7 @@ MoonCart is a full-stack e-commerce platform built with **Node.js**, **Express.j
 ## 📂 Project Structure
 
 MoonCart/
+
 ├── config/
 ├── controller/
 ├── middleware/
