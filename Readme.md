@@ -1,38 +1,59 @@
-<h1>Ecommerce NodeJs web page<h1>
+# Live On
+https://mooncart-oxnt.onrender.com
+# MoonCart 🛒
 
-create .env file and add your values
-JWT_KEY = *******  <!-- star mean your secret value -->
-EXPRESS_SESSION_SECRET = ********
+MoonCart is a full-stack e-commerce platform built with **Node.js**, **Express.js**, **MongoDB**, and **EJS**. It supports both **user** and **admin** roles, offering product browsing, cart management, and administrative product/user controls.
 
+## ✨ Features
 
+- 🔐 User registration and login
+- 🛍️ Product listing with images and prices
+- 🛒 Shopping cart functionality
+- 🧾 Checkout system
+- 🛠️ Admin dashboard to manage users and products
+- 🌐 Clean MVC folder structure
+- 📦 MongoDB for data persistence
 
-Run these command before start program
+## 🛠️ Tech Stack
 
-<strong> export DEBUG=development:*   </strong>
+- Backend: Node.js, Express.js
+- Frontend: EJS templating
+- Database: MongoDB, Mongoose
+- Authentication: JWT, Express-Session
+- Styling: Bootstrap, CSS
 
-and also install npm packages
-run command 
+## 📂 Project Structure
 
-<strong> npm i </strong>
+MoonCart/
+├── config/
+├── controller/
+├── middleware/
+├── model/
+├── public/
+├── router/
+├── utils/
+├── views/
+├── app.js
+├── package.json
+└── .env
 
+``` bash
+## ⚙️ Installation
 
-<!-- mongoose -->
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mrumairkhan74/MoonCart.git
+   cd MoonCart
 
-<ul>
+2. Install dependencies:
+``` bash
+npm install
 
-<li>
-    <p>open config folder<p>
-    <p>Go to Development.json<p>
-    <p>add your mongoDB link an replace it</p>
-</li>
-<li>
-<p>Create a .env file where you can add your JWT_Secret KEY<p>
-</li>
+3. Start the app:
+``` bash
+npm start
 
-</ul>
-
-
-
+# 📸 Screenshots
 <!--  -->
 <h1>Signup && Login Page</h1>
 <img src="/public/images//index_page.png" width="50%" height="50%">
