@@ -37,20 +37,7 @@ MoonCart/
 ├── package.json
 └── .env
 
-
-``` bash
-## ⚙️ Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/mrumairkhan74/MoonCart.git
-   cd MoonCart
-
-
-
-
-
-
+# 📸 ScreenShot
 <!--  -->
 <h1>Signup && Login Page</h1>
 <img src="/public/images//index_page.png" width="50%" height="50%">
@@ -67,9 +54,11 @@ MoonCart/
 <h1>UserCart</h1>
 <img src="/public/images/userCart page.png" width="50%" height="50%">
 
+``` bash
+## ⚙️ Installation
 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mrumairkhan74/MoonCart.git
+   cd MoonCart
 
-
-
-
-<h1>Best Of Luck</h1>
