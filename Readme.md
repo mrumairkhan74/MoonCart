@@ -37,6 +37,7 @@ MoonCart/
 ├── package.json
 └── .env
 
+
 ``` bash
 ## ⚙️ Installation
 
@@ -45,15 +46,11 @@ MoonCart/
    git clone https://github.com/mrumairkhan74/MoonCart.git
    cd MoonCart
 
-2. Install dependencies:
-``` bash
-npm install
 
-3. Start the app:
-``` bash
-npm start
 
-# 📸 Screenshots
+
+
+
 <!--  -->
 <h1>Signup && Login Page</h1>
 <img src="/public/images//index_page.png" width="50%" height="50%">
