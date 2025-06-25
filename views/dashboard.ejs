@@ -18,13 +18,11 @@
         </h1>
       </div>
       <div class="flex justify-center gap-2 items-center">
-        <a href="/dashboard" class=" rounded-lg px-2 py-1">Home</a>
-        <a href="/shop" class=" rounded-lg px-2 py-1">Shop</a>    
+        <a href="/dashboard" class=" rounded-lg px-2 py-1">Home</a>   
         <% if (user && user.email === 'admin@gmail.com') { %>
           <a href="/product/product" class=" rounded-lg px-2 py-1">Create Product</a>
           <% } %>
           <a href="/cart" class=" rounded-lg px-2 py-1">Cart</a>
-        <a href="" class=" rounded-lg px-2 py-1">My Account</a>
         <a href="/logout" class="bg-red-700 text-white rounded-lg px-2 py-1">Logout</a>
       </div>
     </div>
